@@ -4,6 +4,6 @@ package modelo;
  *
  * @author migue
  */
-public class Login {
+public class Mascota {
     
 }
