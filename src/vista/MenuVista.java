@@ -5,6 +5,8 @@
  */
 package vista;
 
+import javax.swing.JButton;
+
 /**
  *
  * @author migue
@@ -12,10 +14,42 @@ package vista;
 public class MenuVista extends javax.swing.JFrame {
 
     /**
-     * Creates new form MenuVista
+     * Creates new form VistaMenu
      */
     public MenuVista() {
         initComponents();
+    }
+
+    public void setBcarnet(JButton Bcarnet) {
+        this.Bcarnet = Bcarnet;
+    }
+
+    public void setBregistroconsulta(JButton Bregistroconsulta) {
+        this.Bregistroconsulta = Bregistroconsulta;
+    }
+
+    public void setBregistromascota(JButton Bregistromascota) {
+        this.Bregistromascota = Bregistromascota;
+    }
+
+    public void setBsalir(JButton Bsalir) {
+        this.Bsalir = Bsalir;
+    }
+
+    public JButton getBcarnet() {
+        return Bcarnet;
+    }
+
+    public JButton getBregistroconsulta() {
+        return Bregistroconsulta;
+    }
+
+    public JButton getBregistromascota() {
+        return Bregistromascota;
+    }
+
+    public JButton getBsalir() {
+        return Bsalir;
     }
 
     /**
@@ -27,19 +61,70 @@ public class MenuVista extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
+        Bregistromascota = new javax.swing.JButton();
+        Bregistroconsulta = new javax.swing.JButton();
+        Bcarnet = new javax.swing.JButton();
+        Bsalir = new javax.swing.JButton();
+
+        jLabel1.setText("jLabel1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        Bregistromascota.setText("Registrar mascota");
+        Bregistromascota.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BregistromascotaActionPerformed(evt);
+            }
+        });
+
+        Bregistroconsulta.setText("Registrar consulta");
+        Bregistroconsulta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BregistroconsultaActionPerformed(evt);
+            }
+        });
+
+        Bcarnet.setText("Ver Carnet");
+        Bcarnet.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BcarnetActionPerformed(evt);
+            }
+        });
+
+        Bsalir.setText("Salir");
+        Bsalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BsalirActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 380, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(Bcarnet, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Bregistromascota, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Bregistroconsulta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Bsalir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(251, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 278, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Bregistromascota, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(Bregistroconsulta, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(Bcarnet, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(Bsalir, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(37, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -61,6 +146,22 @@ public class MenuVista extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void BregistromascotaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BregistromascotaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BregistromascotaActionPerformed
+
+    private void BregistroconsultaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BregistroconsultaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BregistroconsultaActionPerformed
+
+    private void BcarnetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BcarnetActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BcarnetActionPerformed
+
+    private void BsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BsalirActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BsalirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -88,6 +189,7 @@ public class MenuVista extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(MenuVista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -98,6 +200,11 @@ public class MenuVista extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Bcarnet;
+    private javax.swing.JButton Bregistroconsulta;
+    private javax.swing.JButton Bregistromascota;
+    private javax.swing.JButton Bsalir;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
