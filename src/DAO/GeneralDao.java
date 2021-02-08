@@ -16,7 +16,7 @@ public abstract class GeneralDao<T>{
     private File carpetaUsuario;
     private File carpetaPaciente;
     private File archvioUsuario;
-    protected File Pacientes;
+    protected File pacientes;
     
     public GeneralDao(){
         this.Pathgeneral = System.getProperty("user.home");
@@ -55,6 +55,28 @@ public abstract class GeneralDao<T>{
         } catch(IOException e){
             e.printStackTrace();
         }
-    }       
+    }
+
+    public File getCarpetaPaciente() {
+        return carpetaPaciente;
+    }
+
+    public String getUsuariosPath() {
+        return usuariosPath;
+    }
+
+    public String getPacientesPath() {
+        return pacientesPath;
+    }
+
+    public File getCarpetaUsuario() {
+        return carpetaUsuario;
+    }
+
+    public File getArchvioUsuario() {
+        return archvioUsuario;
+    }
+    
+    
     
 }
