@@ -10,8 +10,8 @@ public class Cliente {
     private String correo;
     private Mascota mascota;
     
-    public Cliente(String nombre, String telefono, String correo, String nombreM, String edad, String peso, String raza, String id){
-        mascota = new Mascota(nombreM, edad, peso, raza, id);
+    public Cliente(String nombre, String telefono, String correo, Mascota mascota){
+        this.mascota = mascota;
         this.nombre = nombre;
         this.telefono = telefono;
         this.correo = correo;

@@ -7,7 +7,7 @@ import java.io.IOException;
  *
  * @author migue
  */
-public abstract class DaoGeneral {
+public abstract class GeneralDao<T>{
     private String Pathgeneral;
     private String carpetaPrincicalPath;
     private String usuariosPath;
@@ -18,7 +18,7 @@ public abstract class DaoGeneral {
     private File archvioUsuario;
     protected File Pacientes;
     
-    public DaoGeneral(){
+    public GeneralDao(){
         this.Pathgeneral = System.getProperty("user.home");
         generarRepositorio();
     }
@@ -55,11 +55,6 @@ public abstract class DaoGeneral {
         } catch(IOException e){
             e.printStackTrace();
         }
-    }
-    
-    public abstract void AgregarCuenta();    
-    public abstract void AgregarPaciente();
-    public abstract void VerCita();
-    
+    }       
     
 }

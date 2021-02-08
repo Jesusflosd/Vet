@@ -1,6 +1,6 @@
 package test;
 
-import DAO.DaoGeneral;
+import DAO.GeneralDao;
 import control.MenuControl;
 import vista.MenuVista;
 import vista.RegistroCitaVista;

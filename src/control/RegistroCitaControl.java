@@ -7,7 +7,7 @@ import modelo.Cliente;
  *
  * @author migue
  */
-public class RegistroCitaControl implements ActionListener{
+public class RegistroCitaControl {
     private Cliente cliente;
     
     public RegistroCitaControl() {
