@@ -5,14 +5,130 @@
  */
 package vista;
 
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
 /**
  *
  * @author migue
  */
 public class RegistroCitaVista extends javax.swing.JFrame {
 
+    public JLabel getAdoctor() {
+        return Adoctor;
+    }
+
+    public JLabel getAfecha() {
+        return Afecha;
+    }
+
+    public JLabel getAid() {
+        return Aid;
+    }
+
+    public JLabel getAmotivo() {
+        return Amotivo;
+    }
+
+    public JButton getBregistrar() {
+        return Bregistrar;
+    }
+
+    public JButton getBsalir() {
+        return Bsalir;
+    }
+
+    public JTextField getTanio() {
+        return Tanio;
+    }
+
+    public JTextField getTdia() {
+        return Tdia;
+    }
+
+    public JTextField getTdoctor() {
+        return Tdoctor;
+    }
+
+    public JTextField getTid() {
+        return Tid;
+    }
+
+    public JTextField getTmes() {
+        return Tmes;
+    }
+
+    public JTextField getTmotivo() {
+        return Tmotivo;
+    }
+
+    public void setAexito(JLabel Aexito) {
+        this.Aexito = Aexito;
+    }
+
+    public JLabel getAexito() {
+        return Aexito;
+    }
+
+    public void setAdoctor(JLabel Adoctor) {
+        this.Adoctor = Adoctor;
+    }
+
+    public JButton getBlimpiar() {
+        return Blimpiar;
+    }
+
+    public void setAfecha(JLabel Afecha) {
+        this.Afecha = Afecha;
+    }
+
+    public void setAid(JLabel Aid) {
+        this.Aid = Aid;
+    }
+
+    public void setAmotivo(JLabel Amotivo) {
+        this.Amotivo = Amotivo;
+    }
+
+    public void setBlimpiar(JButton Blimpiar) {
+        this.Blimpiar = Blimpiar;
+    }
+
+    public void setBregistrar(JButton Bregistrar) {
+        this.Bregistrar = Bregistrar;
+    }
+
+    public void setBsalir(JButton Bsalir) {
+        this.Bsalir = Bsalir;
+    }
+
+    public void setTanio(JTextField Tanio) {
+        this.Tanio = Tanio;
+    }
+
+    public void setTdia(JTextField Tdia) {
+        this.Tdia = Tdia;
+    }
+
+    public void setTdoctor(JTextField Tdoctor) {
+        this.Tdoctor = Tdoctor;
+    }
+
+    public void setTid(JTextField Tid) {
+        this.Tid = Tid;
+    }
+
+    public void setTmes(JTextField Tmes) {
+        this.Tmes = Tmes;
+    }
+
+    public void setTmotivo(JTextField Tmotivo) {
+        this.Tmotivo = Tmotivo;
+    }
+
     /**
-     * Creates new form RegistroVista
+     * Creates new form RegistroCitaVista
      */
     public RegistroCitaVista() {
         initComponents();
@@ -28,93 +144,152 @@ public class RegistroCitaVista extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        Lmotivo = new javax.swing.JLabel();
-        Tmotivo = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        Tfecha = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
-        Tid = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        Tdia = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        Tmes = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        Tanio = new javax.swing.JTextField();
+        Tmotivo = new javax.swing.JTextField();
+        Tdoctor = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        Tid = new javax.swing.JTextField();
         Bsalir = new javax.swing.JButton();
-        Bregistro = new javax.swing.JButton();
+        Bregistrar = new javax.swing.JButton();
+        Blimpiar = new javax.swing.JButton();
+        Amotivo = new javax.swing.JLabel();
+        Adoctor = new javax.swing.JLabel();
+        Afecha = new javax.swing.JLabel();
+        Aid = new javax.swing.JLabel();
+        Aexito = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        Lmotivo.setText("Motivo de la visita:");
+        jLabel1.setText("Motivo de connsulta");
 
-        Tmotivo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TmotivoActionPerformed(evt);
-            }
-        });
+        jLabel2.setText("Doctor que atendera");
 
-        jLabel3.setText("Fecha de la consulta:");
+        jLabel3.setText("Dia");
 
-        Tfecha.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TfechaActionPerformed(evt);
-            }
-        });
+        jLabel4.setText("Mes");
 
-        jLabel8.setText("ID de la mascota:");
+        jLabel5.setText("Año");
 
-        jLabel1.setText("Medico que atendera:");
+        jLabel6.setText("ID de la mascota");
+
+        Bsalir.setText("Salir");
+
+        Bregistrar.setText("Registrar consulta");
+
+        Blimpiar.setText("Limpiar");
+
+        Amotivo.setForeground(new java.awt.Color(255, 0, 0));
+        Amotivo.setText("Campo vacio");
+        Amotivo.setEnabled(false);
+
+        Adoctor.setForeground(new java.awt.Color(255, 0, 0));
+        Adoctor.setText("Campo vacio");
+        Adoctor.setEnabled(false);
+
+        Afecha.setForeground(new java.awt.Color(255, 0, 0));
+        Afecha.setText("Fecha incorrecta");
+        Afecha.setEnabled(false);
+
+        Aid.setForeground(new java.awt.Color(255, 0, 0));
+        Aid.setText("ID incorrecta");
+        Aid.setEnabled(false);
+
+        Aexito.setForeground(new java.awt.Color(0, 255, 0));
+        Aexito.setText("Registro exitoso");
+        Aexito.setEnabled(false);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Lmotivo)
-                            .addComponent(jLabel3))
-                        .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(Tmotivo)
-                            .addComponent(Tfecha, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel8))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel1)
+                                .addGap(18, 18, 18)
+                                .addComponent(Tmotivo))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel2)
+                                .addGap(18, 18, 18)
+                                .addComponent(Tdoctor))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Tdia, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel4)
+                                .addGap(18, 18, 18)
+                                .addComponent(Tmes, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel5)
+                                .addGap(18, 18, 18)
+                                .addComponent(Tanio, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Tid, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jTextField1))))
-                .addGap(76, 76, 76))
+                            .addComponent(Amotivo)
+                            .addComponent(Adoctor)
+                            .addComponent(Afecha)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(Bsalir)
+                        .addGap(18, 18, 18)
+                        .addComponent(Bregistrar)
+                        .addGap(18, 18, 18)
+                        .addComponent(Blimpiar))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel6)
+                        .addGap(18, 18, 18)
+                        .addComponent(Tid, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(Aid)
+                        .addGap(18, 18, 18)
+                        .addComponent(Aexito)))
+                .addContainerGap(35, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Lmotivo)
-                    .addComponent(Tmotivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
-                    .addComponent(Tfecha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Tmotivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Amotivo))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(Tdoctor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Adoctor))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(Tdia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4)
+                    .addComponent(Tmes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5)
+                    .addComponent(Tanio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Afecha))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
                     .addComponent(Tid, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(Aid)
+                    .addComponent(Aexito))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Bsalir)
+                    .addComponent(Bregistrar)
+                    .addComponent(Blimpiar))
+                .addContainerGap())
         );
-
-        Bsalir.setText("Salir");
-
-        Bregistro.setText("Registrar cita");
-        Bregistro.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BregistroActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -122,13 +297,7 @@ public class RegistroCitaVista extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(Bsalir, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(55, 55, 55)
-                        .addComponent(Bregistro, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 131, Short.MAX_VALUE)))
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -136,27 +305,11 @@ public class RegistroCitaVista extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Bsalir)
-                    .addComponent(Bregistro))
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void TmotivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TmotivoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TmotivoActionPerformed
-
-    private void BregistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BregistroActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_BregistroActionPerformed
-
-    private void TfechaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TfechaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TfechaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -184,7 +337,6 @@ public class RegistroCitaVista extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(RegistroCitaVista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -195,16 +347,26 @@ public class RegistroCitaVista extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Bregistro;
+    private javax.swing.JLabel Adoctor;
+    private javax.swing.JLabel Aexito;
+    private javax.swing.JLabel Afecha;
+    private javax.swing.JLabel Aid;
+    private javax.swing.JLabel Amotivo;
+    private javax.swing.JButton Blimpiar;
+    private javax.swing.JButton Bregistrar;
     private javax.swing.JButton Bsalir;
-    private javax.swing.JLabel Lmotivo;
-    private javax.swing.JTextField Tfecha;
+    private javax.swing.JTextField Tanio;
+    private javax.swing.JTextField Tdia;
+    private javax.swing.JTextField Tdoctor;
     private javax.swing.JTextField Tid;
+    private javax.swing.JTextField Tmes;
     private javax.swing.JTextField Tmotivo;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

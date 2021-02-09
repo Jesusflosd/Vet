@@ -8,6 +8,9 @@ public class Cita {
     private String fecha;
     private String nombreMedico;
     private String motivo;
+    
+    public Cita(){
+    }
 
     public Cita(String fecha, String nombreMedico, String motivo) {
         this.fecha = fecha;

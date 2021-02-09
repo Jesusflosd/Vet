@@ -16,31 +16,31 @@ public class CitaDao extends GeneralDao<Cita>{
 
     public boolean Agregar(Cita cita, String ID) {
         listapaciente = getCarpetaPaciente().listFiles();
-        
+        ID = ID + ".txt";
         for(int i = 0; i < listapaciente.length;i++){
             //verifica si existe el ID, si es asi, agrega la cita al carnet y retorna true
+            
            if(ID.equals(listapaciente[i].getName())){
                pacientes = new File(getCarpetaPaciente() + "\\" +listapaciente[i].getName());
-               System.out.println(listapaciente[i].getName());
+               System.out.println("existe");
                
                try{                  
                    fw = new FileWriter(pacientes, true);
-                   fw.write(GetCitaCarnet() + "\n");
-                   
+                   SetCitaCarnet(cita.getNombreMedico(), cita.getMotivo(), cita.getFecha());
+                   fw.write(GetCitaCarnet() + "\n");                  
                    fw.close();
+                   return false;
                }catch(Exception io){
-                   
+                   System.out.println("existe");
                }        
                           
-           }else{
-               return false;
            }
+           
         }
-        
-        return true;       
+        return true;            
     }
     
-    public void SetCitaCarnet(String medico, String motivo, String Fecha){
+    public void SetCitaCarnet(String motivo, String medico, String Fecha){
         pacientecarnet = medico +":" + motivo + ":" + Fecha;
     }
     
