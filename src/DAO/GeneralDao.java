@@ -39,22 +39,7 @@ public abstract class GeneralDao<T>{
             carpetaUsuario.mkdir();
             carpetaPaciente.mkdir();
         }
-        
-        //Genera el archivo de las cuentas
-        generarArchivos(usuariosPath, pacientesPath);       
-    }
-    
-    public void generarArchivos(String CarpetaUsuarios,String CarpetaPaciente){
-        archvioUsuario = new File(CarpetaUsuarios + "\\Usuarios.txt");
-        
-        try{
-            //Verifica la existencia, de lo contrario, lo crea
-            if(!archvioUsuario.exists()){
-                archvioUsuario.createNewFile();
-            }                   
-        } catch(IOException e){
-            e.printStackTrace();
-        }
+              
     }
 
     public File getCarpetaPaciente() {

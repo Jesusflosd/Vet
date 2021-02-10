@@ -7,15 +7,18 @@
             <file>file:/C:/Users/migue/Desktop/Vet/src/vista/MenuVista.java</file>
             <file>file:/C:/Users/migue/Desktop/Vet/src/modelo/Mascota.java</file>
             <file>file:/C:/Users/migue/Desktop/Vet/src/DAO/CitaDao.java</file>
-            <file>file:/C:/Users/migue/Desktop/Vet/src/control/RegistroControl.java</file>
             <file>file:/C:/Users/migue/Desktop/Vet/src/modelo/Usuario.java</file>
             <file>file:/C:/Users/migue/Desktop/Vet/src/vista/LoginVista.java</file>
             <file>file:/C:/Users/migue/Desktop/Vet/src/control/RegistroCitaControl.java</file>
             <file>file:/C:/Users/migue/Desktop/Vet/src/modelo/Cita.java</file>
+            <file>file:/C:/Users/migue/Desktop/Vet/src/vista/RegistroUsuarioVista.java</file>
             <file>file:/C:/Users/migue/Desktop/Vet/src/control/MenuControl.java</file>
             <file>file:/C:/Users/migue/Desktop/Vet/src/DAO/GeneralDao.java</file>
-            <file>file:/C:/Users/migue/Desktop/Vet/src/vista/RegistroVista.java</file>
             <file>file:/C:/Users/migue/Desktop/Vet/src/vista/RegistroCitaVista.java</file>
+            <file>file:/C:/Users/migue/Desktop/Vet/src/control/RegistroUsuarioControl.java</file>
+            <file>file:/C:/Users/migue/Desktop/Vet/src/DAO/ClienteDao.java</file>
+            <file>file:/C:/Users/migue/Desktop/Vet/src/vista/RegistroClienteVista.java</file>
+            <file>file:/C:/Users/migue/Desktop/Vet/src/DAO/UsuarioDao.java</file>
             <file>file:/C:/Users/migue/Desktop/Vet/src/test/MainTest.java</file>
             <file>file:/C:/Users/migue/Desktop/Vet/src/control/LoginControl.java</file>
         </group>
