@@ -9,7 +9,10 @@ public class Cliente {
     private String telefono;
     private String correo;
     private Mascota mascota;
-    
+
+    public Cliente() {
+    }
+
     public Cliente(String nombre, String telefono, String correo, Mascota mascota){
         this.mascota = mascota;
         this.nombre = nombre;
@@ -43,6 +46,9 @@ public class Cliente {
 
     public void setCorreo(String correo) {
         this.correo = correo;
-    }  
-    
+    }
+
+    public void setMascota(Mascota mascota) {
+        this.mascota = mascota;
+    }
 }
