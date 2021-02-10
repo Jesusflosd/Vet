@@ -6,7 +6,6 @@ import java.awt.event.ActionListener;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import modelo.Cita;
-import modelo.Cliente;
 import vista.RegistroCitaVista;
 
 /**

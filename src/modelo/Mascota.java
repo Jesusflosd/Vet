@@ -1,10 +1,14 @@
 package modelo;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author migue
  */
 public class Mascota {
+    private final List<Cita> citas = new ArrayList<>();
     private String nombre;
     private String edad;
     private String raza;
@@ -58,8 +62,9 @@ public class Mascota {
     public void setId(String id) {
         this.id = id;
     }
-    
-    
-    
-    
+
+
+    public List<Cita> getCitas() {
+        return citas;
+    }
 }
